@@ -1,0 +1,37 @@
+
+######################
+# Maven
+######################
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+######################
+# Logs
+######################
+*.log
+
+######################
+# IntelliJ IDEA
+######################
+.idea/
+*.iml
+out/
+
+######################
+# Mac System Files
+######################
+.DS_Store
+
+######################
+# Node (if React frontend exists)
+######################
+node_modules/
+dist/
+build/
+
+######################
+# Environment Files
+######################
+.env
+application-local.yml
+application-dev.yml
