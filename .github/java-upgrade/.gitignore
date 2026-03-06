@@ -1,7 +1,7 @@
 ######################
 # Maven
 ######################
-/target/
+/target/git rm -r --cached target
 !.mvn/wrapper/maven-wrapper.jar
 
 ######################
