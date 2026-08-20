@@ -1,0 +1,15 @@
+{
+  "name": "lahar-city-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Official City Portal for Lahar, Madhya Pradesh – The City of Culture and Heritage",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite": "^5.4.0"
+  }
+}
