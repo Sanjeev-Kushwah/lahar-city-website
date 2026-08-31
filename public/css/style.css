@@ -4,17 +4,18 @@
    ============================================ */
 
 :root {
-    --maroon: #6B1A1A;
-    --deep-maroon: #3D0C0C;
-    --saffron: #E8861A;
-    --gold: #C9A227;
-    --light-gold: #F0D060;
-    --cream: #FDF0DC;
-    --warm-white: #FFFAF0;
-    --dark: #1A0800;
-    --charcoal: #2C1810;
-    --text-muted: #9B7B5A;
-    --border: rgba(201, 162, 39, 0.3);
+    --maroon: #B4523A;
+    --deep-maroon: #22304A;
+    --saffron: #C8843D;
+    --gold: #C8843D;
+    --light-gold: #E3B56B;
+    --cream: #F7F1E7;
+    --warm-white: #FFFDF8;
+    --dark: #172033;
+    --charcoal: #26344C;
+    --text-muted: #B9C1CF;
+    --border: rgba(227, 181, 107, 0.32);
+    --surface-2: #31415D;
 }
 
 
@@ -44,12 +45,12 @@ nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
     display: flex; align-items: center; justify-content: space-between;
     padding: 0 5%; height: 68px;
-    background: rgba(26,8,0,0.92);
+    background: rgba(23,32,51,0.94);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
     transition: all 0.3s ease;
 }
-nav.scrolled { height: 56px; background: rgba(26,8,0,0.98); }
+nav.scrolled { height: 56px; background: rgba(23,32,51,0.98); }
 
 .nav-logo {
     font-family: 'Cinzel', Georgia, serif;
@@ -79,9 +80,8 @@ nav.scrolled { height: 56px; background: rgba(26,8,0,0.98); }
     display: flex; align-items: center; justify-content: center;
     position: relative; overflow: hidden;
     background:
-        radial-gradient(ellipse at 30% 60%, rgba(107,26,26,0.55) 0%, transparent 60%),
-        radial-gradient(ellipse at 80% 20%, rgba(232,134,26,0.25) 0%, transparent 50%),
-        linear-gradient(160deg, #1A0800 0%, #2C1810 40%, #1A0800 100%);
+        linear-gradient(140deg, rgba(34,48,74,0.98), rgba(23,32,51,0.96)),
+        url('../images/Lahar%20Jail.png') center / cover;
     text-align: center; padding: 100px 5% 60px;
 }
 
@@ -96,15 +96,9 @@ nav.scrolled { height: 56px; background: rgba(26,8,0,0.98); }
 @keyframes gridMove { 0%{transform:translate(0,0)} 100%{transform:translate(60px,60px)} }
 
 #home::after {
-    content: ''; position: absolute;
-    width: 600px; height: 600px; border-radius: 50%;
-    border: 1px solid rgba(201,162,39,0.08);
-    top: 50%; left: 50%; transform: translate(-50%, -50%);
-    box-shadow:
-        0 0 0 60px rgba(201,162,39,0.04),
-        0 0 0 120px rgba(201,162,39,0.03),
-        0 0 0 200px rgba(201,162,39,0.02);
-    animation: pulseMandala 6s ease-in-out infinite;
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 45%, rgba(23,32,51,0.55));
+    pointer-events: none;
 }
 @keyframes pulseMandala {
     0%,100%{opacity:0.5;transform:translate(-50%,-50%) scale(1)}
@@ -231,7 +225,7 @@ section { padding: 100px 5%; }
 .about-cards { display: flex; flex-direction: column; gap: 20px; }
 
 .info-card {
-    background: linear-gradient(135deg, rgba(107,26,26,0.3), rgba(201,162,39,0.08));
+    background: linear-gradient(135deg, rgba(180,82,58,0.22), rgba(201,162,39,0.08));
     border: 1px solid var(--border); border-radius: 4px;
     padding: 24px 28px; display: flex; align-items: flex-start; gap: 20px;
     transition: transform 0.3s, border-color 0.3s;
